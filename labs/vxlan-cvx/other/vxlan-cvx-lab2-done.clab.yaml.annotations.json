@@ -1,0 +1,123 @@
+{
+  "freeTextAnnotations": [],
+  "freeShapeAnnotations": [],
+  "groupStyleAnnotations": [],
+  "networkNodeAnnotations": [],
+  "nodeAnnotations": [
+    {
+      "id": "leaf1",
+      "position": {
+        "x": 485,
+        "y": 305
+      },
+      "groupLabelPos": "bottom-center"
+    },
+    {
+      "id": "leaf2",
+      "position": {
+        "x": 575,
+        "y": 305
+      },
+      "groupLabelPos": "bottom-center"
+    },
+    {
+      "id": "leaf3",
+      "position": {
+        "x": 645,
+        "y": 305
+      },
+      "groupLabelPos": "bottom-center"
+    },
+    {
+      "id": "leaf4",
+      "position": {
+        "x": 715,
+        "y": 305
+      },
+      "groupLabelPos": "bottom-center"
+    },
+    {
+      "id": "spine1",
+      "position": {
+        "x": 545,
+        "y": 225
+      },
+      "groupLabelPos": "bottom-center"
+    },
+    {
+      "id": "spine2",
+      "position": {
+        "x": 685,
+        "y": 215
+      },
+      "groupLabelPos": "bottom-center"
+    },
+    {
+      "id": "host-a",
+      "position": {
+        "x": 485,
+        "y": 365
+      },
+      "groupLabelPos": "bottom-center"
+    },
+    {
+      "id": "host-b",
+      "position": {
+        "x": 575,
+        "y": 365
+      },
+      "groupLabelPos": "bottom-center"
+    },
+    {
+      "id": "host-c",
+      "position": {
+        "x": 645,
+        "y": 365
+      },
+      "groupLabelPos": "bottom-center"
+    },
+    {
+      "id": "host-d",
+      "position": {
+        "x": 715,
+        "y": 365
+      },
+      "groupLabelPos": "bottom-center"
+    },
+    {
+      "id": "leaf5",
+      "position": {
+        "x": 615,
+        "y": 205
+      },
+      "groupLabelPos": "bottom-center"
+    },
+    {
+      "id": "cvx1",
+      "position": {
+        "x": 545,
+        "y": 165
+      },
+      "groupLabelPos": "bottom-center"
+    },
+    {
+      "id": "cvx2",
+      "position": {
+        "x": 615,
+        "y": 135
+      },
+      "groupLabelPos": "bottom-center"
+    },
+    {
+      "id": "cvx3",
+      "position": {
+        "x": 685,
+        "y": 165
+      },
+      "groupLabelPos": "bottom-center"
+    }
+  ],
+  "edgeAnnotations": [],
+  "aliasEndpointAnnotations": [],
+  "viewerSettings": {}
+}

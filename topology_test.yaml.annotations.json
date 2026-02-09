@@ -1,0 +1,39 @@
+{
+  "freeTextAnnotations": [],
+  "freeShapeAnnotations": [],
+  "groupStyleAnnotations": [],
+  "networkNodeAnnotations": [],
+  "nodeAnnotations": [
+    {
+      "id": "ceos3",
+      "position": {
+        "x": 343,
+        "y": -133
+      }
+    },
+    {
+      "id": "ceos2",
+      "position": {
+        "x": 441,
+        "y": -49
+      }
+    },
+    {
+      "id": "ceos1",
+      "position": {
+        "x": 245,
+        "y": -49
+      }
+    },
+    {
+      "id": "ceos4",
+      "position": {
+        "x": 343,
+        "y": 21
+      }
+    }
+  ],
+  "edgeAnnotations": [],
+  "aliasEndpointAnnotations": [],
+  "viewerSettings": {}
+}

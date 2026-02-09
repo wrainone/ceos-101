@@ -1,0 +1,51 @@
+{
+  "freeTextAnnotations": [],
+  "freeShapeAnnotations": [],
+  "groupStyleAnnotations": [],
+  "networkNodeAnnotations": [],
+  "nodeAnnotations": [
+    {
+      "id": "VTEP1",
+      "position": {
+        "x": 285,
+        "y": 505
+      },
+      "groupLabelPos": "bottom-center"
+    },
+    {
+      "id": "Router",
+      "position": {
+        "x": 355,
+        "y": 495
+      },
+      "groupLabelPos": "bottom-center"
+    },
+    {
+      "id": "VTEP2",
+      "position": {
+        "x": 425,
+        "y": 505
+      },
+      "groupLabelPos": "bottom-center"
+    },
+    {
+      "id": "host1",
+      "position": {
+        "x": 285,
+        "y": 575
+      },
+      "groupLabelPos": "bottom-center"
+    },
+    {
+      "id": "host2",
+      "position": {
+        "x": 425,
+        "y": 575
+      },
+      "groupLabelPos": "bottom-center"
+    }
+  ],
+  "edgeAnnotations": [],
+  "aliasEndpointAnnotations": [],
+  "viewerSettings": {}
+}

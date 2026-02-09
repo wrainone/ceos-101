@@ -1,0 +1,125 @@
+! Startup-config last modified at Mon Feb  9 18:29:13 2026 by admin
+! device: ceos1 (cEOSLab, EOS-4.35.0F-44178984.4350F (engineering build))
+!
+no aaa root
+!
+username admin privilege 15 role network-admin secret sha512 $6$89U1UsI5yN3iwAdW$kdHoe/2SYCvZgr5aA9plAGsXKc8DRUwKwX9oWFvX3GixnykY2irCcWCmFiTMG8csxuPEKSU0/Ev6XaJuDoxPP1
+!
+management api http-commands
+   no shutdown
+!
+no service interface inactive port-id allocation disabled
+!
+transceiver qsfp default-mode 4x10G
+!
+service routing protocols model multi-agent
+!
+hostname ceos1
+!
+spanning-tree mode mstp
+!
+system l1
+   unsupported speed action error
+   unsupported error-correction action error
+!
+vlan 10
+   name TenantA
+!
+vlan 4094
+   name MLAG-PEER
+!
+vrf instance TenantA
+   rd 65001:500
+!
+management api gnmi
+   transport grpc default
+!
+management api netconf
+   transport ssh default
+!
+interface Port-Channel100
+   switchport trunk allowed vlan 4094
+   switchport mode trunk
+   mlag 1
+!
+interface Ethernet1
+!
+interface Ethernet2
+   mtu 9214
+   no switchport
+   ip address 10.0.0.1/31
+!
+interface Ethernet3
+   switchport access vlan 10
+   spanning-tree portfast edge
+!
+interface Loopback0
+   ip address 2.2.2.1/32
+!
+interface Loopback1
+   ip address 3.3.3.1/32
+!
+interface Management0
+   ip address 172.20.20.5/24
+   ipv6 address 3fff:172:20:20::5/64
+!
+interface Vlan10
+   ip address virtual 10.1.0.1/24
+!
+interface Vlan4094
+   ip address 172.16.0.1/30
+!
+interface Vxlan1
+   vxlan source-interface Loopback1
+   vxlan udp-port 4789
+   vxlan vlan 10 vni 10010
+   vxlan vrf TenantA vni 50000
+!
+ip routing
+no ip routing vrf TenantA
+!
+mlag configuration
+   domain-id POC-Leaves
+   local-interface Vlan4094
+   peer-address 172.16.0.2
+!
+ip route 0.0.0.0/0 172.20.20.1
+!
+ipv6 route ::/0 3fff:172:20:20::1
+!
+router bgp 65001
+   router-id 2.2.2.1
+   maximum-paths 4 ecmp 4
+   neighbor SPINE-PEERS peer group
+   neighbor SPINE-PEERS remote-as 65000
+   neighbor SPINE-PEERS update-source Loopback0
+   neighbor SPINE-PEERS ebgp-multihop 3
+   neighbor SPINE-PEERS send-community extended
+   neighbor 1.1.1.1 peer group SPINE-PEERS
+   redistribute connected
+   !
+   vlan 10
+      rd 65001:10010
+      route-target both 10010:10010
+      redistribute learned
+   !
+   address-family evpn
+      neighbor SPINE-PEERS activate
+   !
+   address-family ipv4
+      neighbor SPINE-PEERS activate
+   !
+   vrf TenantA
+      rd 65001:500
+      route-target import evpn 500:500
+      route-target export evpn 500:500
+      redistribute connected
+!
+router multicast
+   ipv4
+      software-forwarding kernel
+   !
+   ipv6
+      software-forwarding kernel
+!
+end

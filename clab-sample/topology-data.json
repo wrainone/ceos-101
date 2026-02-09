@@ -1,0 +1,235 @@
+{
+  "name": "sample",
+  "type": "clab",
+  "clab": {
+    "config": {
+      "prefix": "",
+      "mgmt": {
+        "network": "clab",
+        "bridge": "br-f1fbd9def521",
+        "ipv4-subnet": "172.20.20.0/24",
+        "ipv4-gw": "172.20.20.1",
+        "ipv6-subnet": "3fff:172:20:20::/64",
+        "ipv6-gw": "3fff:172:20:20::1",
+        "external-access": true
+      }
+    }
+  },
+  "ssh-pub-keys": [],
+  "nodes": {
+    "ceos1": {
+      "index": "0",
+      "shortname": "ceos1",
+      "longname": "ceos1",
+      "fqdn": "ceos1.sample.io",
+      "group": "",
+      "labdir": "/workspaces/ceos-101/clab-sample/ceos1",
+      "kind": "ceos",
+      "image": "ceos:4.35.0F",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "172.20.20.5",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::5",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "00:1c:73:cd:15:d4",
+      "labels": {
+        "clab-git-branch": "codespace-legendary-space-zebra-pjq7jvwwwp26vwq",
+        "clab-git-hash": "4fc05b5",
+        "clab-mgmt-net-bridge": "br-f1fbd9def521",
+        "clab-node-group": "",
+        "clab-node-kind": "ceos",
+        "clab-node-lab-dir": "/workspaces/ceos-101/clab-sample/ceos1",
+        "clab-node-longname": "ceos1",
+        "clab-node-name": "ceos1",
+        "clab-node-type": "",
+        "clab-owner": "codespace",
+        "clab-topo-file": "/workspaces/ceos-101/topology_test.yaml",
+        "containerlab": "sample"
+      },
+      "port-bindings": [
+      ]
+    },
+    "ceos2": {
+      "index": "1",
+      "shortname": "ceos2",
+      "longname": "ceos2",
+      "fqdn": "ceos2.sample.io",
+      "group": "",
+      "labdir": "/workspaces/ceos-101/clab-sample/ceos2",
+      "kind": "ceos",
+      "image": "ceos:4.35.0F",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "172.20.20.3",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::3",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "00:1c:73:17:db:b5",
+      "labels": {
+        "clab-git-branch": "codespace-legendary-space-zebra-pjq7jvwwwp26vwq",
+        "clab-git-hash": "4fc05b5",
+        "clab-mgmt-net-bridge": "br-f1fbd9def521",
+        "clab-node-group": "",
+        "clab-node-kind": "ceos",
+        "clab-node-lab-dir": "/workspaces/ceos-101/clab-sample/ceos2",
+        "clab-node-longname": "ceos2",
+        "clab-node-name": "ceos2",
+        "clab-node-type": "",
+        "clab-owner": "codespace",
+        "clab-topo-file": "/workspaces/ceos-101/topology_test.yaml",
+        "containerlab": "sample"
+      },
+      "port-bindings": [
+      ]
+    },
+    "ceos3": {
+      "index": "2",
+      "shortname": "ceos3",
+      "longname": "ceos3",
+      "fqdn": "ceos3.sample.io",
+      "group": "",
+      "labdir": "/workspaces/ceos-101/clab-sample/ceos3",
+      "kind": "ceos",
+      "image": "ceos:4.35.0F",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "172.20.20.2",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::2",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "00:1c:73:d8:df:90",
+      "labels": {
+        "clab-git-branch": "codespace-legendary-space-zebra-pjq7jvwwwp26vwq",
+        "clab-git-hash": "4fc05b5",
+        "clab-mgmt-net-bridge": "br-f1fbd9def521",
+        "clab-node-group": "",
+        "clab-node-kind": "ceos",
+        "clab-node-lab-dir": "/workspaces/ceos-101/clab-sample/ceos3",
+        "clab-node-longname": "ceos3",
+        "clab-node-name": "ceos3",
+        "clab-node-type": "",
+        "clab-owner": "codespace",
+        "clab-topo-file": "/workspaces/ceos-101/topology_test.yaml",
+        "containerlab": "sample"
+      },
+      "port-bindings": [
+      ]
+    },
+    "ceos4": {
+      "index": "3",
+      "shortname": "ceos4",
+      "longname": "ceos4",
+      "fqdn": "ceos4.sample.io",
+      "group": "",
+      "labdir": "/workspaces/ceos-101/clab-sample/ceos4",
+      "kind": "ceos",
+      "image": "ceos:4.35.0F",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "172.20.20.4",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::4",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "00:1c:73:30:07:87",
+      "labels": {
+        "clab-git-branch": "codespace-legendary-space-zebra-pjq7jvwwwp26vwq",
+        "clab-git-hash": "4fc05b5",
+        "clab-mgmt-net-bridge": "br-f1fbd9def521",
+        "clab-node-group": "",
+        "clab-node-kind": "ceos",
+        "clab-node-lab-dir": "/workspaces/ceos-101/clab-sample/ceos4",
+        "clab-node-longname": "ceos4",
+        "clab-node-name": "ceos4",
+        "clab-node-type": "",
+        "clab-owner": "codespace",
+        "clab-topo-file": "/workspaces/ceos-101/topology_test.yaml",
+        "containerlab": "sample"
+      },
+      "port-bindings": [
+      ]
+    }
+  },
+  "links": [
+    {
+      "endpoints": {
+        "a": {
+          "node": "ceos1",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:4f:9e:6b",
+          "peer": "z"
+        },
+        "z": {
+          "node": "ceos2",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:be:05:f2",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "ceos1",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:87:a7:08",
+          "peer": "z"
+        },
+        "z": {
+          "node": "ceos3",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:23:92:7c",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "ceos2",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:e2:bc:cf",
+          "peer": "z"
+        },
+        "z": {
+          "node": "ceos3",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:13:27:17",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "ceos1",
+          "interface": "eth3",
+          "mac": "aa:c1:ab:9b:df:94",
+          "peer": "z"
+        },
+        "z": {
+          "node": "ceos4",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:76:26:15",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "ceos2",
+          "interface": "eth3",
+          "mac": "aa:c1:ab:4b:48:1c",
+          "peer": "z"
+        },
+        "z": {
+          "node": "ceos4",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:aa:5b:f5",
+          "peer": "a"
+        }
+      }
+    }
+  ]
+}
