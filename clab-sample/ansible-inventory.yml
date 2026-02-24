@@ -12,10 +12,10 @@ all:
         ansible_password: admin
       hosts:
         ceos1:
-          ansible_host: 172.20.20.5
-        ceos2:
           ansible_host: 172.20.20.3
-        ceos3:
+        ceos2:
           ansible_host: 172.20.20.2
+        ceos3:
+          ansible_host: 172.20.20.5
         ceos4:
           ansible_host: 172.20.20.4

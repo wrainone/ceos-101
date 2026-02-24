@@ -3,17 +3,17 @@ ceos1:
     username: admin
     password: admin
     platform: ceos
-    hostname: 172.20.20.5
+    hostname: 172.20.20.3
 ceos2:
     username: admin
     password: admin
     platform: ceos
-    hostname: 172.20.20.3
+    hostname: 172.20.20.2
 ceos3:
     username: admin
     password: admin
     platform: ceos
-    hostname: 172.20.20.2
+    hostname: 172.20.20.5
 ceos4:
     username: admin
     password: admin
