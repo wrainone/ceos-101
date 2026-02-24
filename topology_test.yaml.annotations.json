@@ -9,6 +9,10 @@
       "position": {
         "x": 343,
         "y": -133
+      },
+      "geoCoordinates": {
+        "lat": 50.797737,
+        "lng": 3.946014
       }
     },
     {
@@ -16,6 +20,10 @@
       "position": {
         "x": 441,
         "y": -49
+      },
+      "geoCoordinates": {
+        "lat": 49.741134,
+        "lng": 5.324646
       }
     },
     {
@@ -23,6 +31,10 @@
       "position": {
         "x": 245,
         "y": -49
+      },
+      "geoCoordinates": {
+        "lat": 49.710678,
+        "lng": 2.694499
       }
     },
     {
@@ -30,6 +42,10 @@
       "position": {
         "x": 343,
         "y": 21
+      },
+      "geoCoordinates": {
+        "lat": 48.866401,
+        "lng": 4.030664
       }
     }
   ],

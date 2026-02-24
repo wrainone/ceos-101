@@ -7,40 +7,40 @@
     {
       "id": "VTEP1",
       "position": {
-        "x": 285,
-        "y": 505
+        "x": 240,
+        "y": 480
       },
       "groupLabelPos": "bottom-center"
     },
     {
       "id": "Router",
       "position": {
-        "x": 355,
-        "y": 495
+        "x": 360,
+        "y": 440
       },
       "groupLabelPos": "bottom-center"
     },
     {
       "id": "VTEP2",
       "position": {
-        "x": 425,
-        "y": 505
+        "x": 460,
+        "y": 500
       },
       "groupLabelPos": "bottom-center"
     },
     {
       "id": "host1",
       "position": {
-        "x": 285,
-        "y": 575
+        "x": 240,
+        "y": 620
       },
       "groupLabelPos": "bottom-center"
     },
     {
       "id": "host2",
       "position": {
-        "x": 425,
-        "y": 575
+        "x": 460,
+        "y": 620
       },
       "groupLabelPos": "bottom-center"
     }

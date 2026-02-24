@@ -5,16 +5,14 @@
   "networkNodeAnnotations": [],
   "nodeAnnotations": [
     {
-      "id": "srl1",
-      "interfacePattern": "e1-{n}",
+      "id": "ceos1",
       "position": {
         "x": 380,
         "y": 360
       }
     },
     {
-      "id": "srl2",
-      "interfacePattern": "e1-{n}",
+      "id": "ceos2",
       "position": {
         "x": 520,
         "y": 340
