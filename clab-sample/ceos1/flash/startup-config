@@ -1,4 +1,4 @@
-! Startup-config last modified at Tue Feb 24 20:28:28 2026 by root
+! Startup-config last modified at Fri Mar  6 19:46:09 2026 by root
 ! device: dc1-leaf1a (cEOSLab, EOS-4.35.0F-44178984.4350F (engineering build))
 !
 no aaa root
@@ -92,6 +92,12 @@ interface Port-Channel5
    mlag 5
    spanning-tree portfast edge
 !
+interface Port-Channel8
+   description L2_dc1-leaf1c_Port-Channel1
+   switchport trunk allowed vlan 11-12,21-22,3401-3402
+   switchport mode trunk
+   mlag 8
+!
 interface Ethernet1
    description MLAG_dc1-leaf1b_Ethernet4
    mtu 1500
@@ -105,8 +111,8 @@ interface Ethernet2
    ip address 10.255.255.1/31
 !
 interface Ethernet3
-   description MLAG_dc1-leaf1b_Ethernet3
-   channel-group 3 mode active
+   description L2_dc1-leaf1c_Ethernet1
+   channel-group 8 mode active
 !
 interface Ethernet4
    description MLAG_dc1-leaf1b_Ethernet4
@@ -131,8 +137,8 @@ interface Loopback11
    ip address 10.255.11.3/32
 !
 interface Management0
-   ip address 172.20.20.3/24
-   ipv6 address 3fff:172:20:20::3/64
+   ip address 172.20.20.5/24
+   ipv6 address 3fff:172:20:20::5/64
 !
 interface Vlan11
    description VRF10_VLAN11
